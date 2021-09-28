@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> headerLinks2}}
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <div class="form_wrapper">
+    <div class="form_container">
+      <div class="title_container">
+        <h2> Create an Account </h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form action="/register" method="POST">
+            <div class="row clearfix">
+              <div class="col_half">
+                <div class="input_field"> <span class="material-icons">
+                    person
+                  </span>
+
+                  <input type="text" name="firstname" placeholder="First Name" />
+                </div>
+              </div>
+              <div class="col_half">
+                <div class="input_field"> <span class="material-icons">
+                    person
+                  </span>
+
+                  <input type="text" name="lastname" placeholder="Last Name" required />
+                </div>
+              </div>
+            </div>
+            <div class="input_field"><span class="material-icons">
+                email
+              </span>
+              <input type="email" name="email" placeholder="email" required />
+            </div>
+
+            <div class="input_field"> <span class="material-icons">
+                phone
+              </span>
+              <input type="tel" minlength="10" maxlength="12" pattern="[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{4}" name="phone"
+                placeholder="Enter you phone number (92xxxxxxxxxx)" required />
+            </div>
+
+            <div class="input_field"> <span class="material-icons">
+                lock
+              </span>
+              <input type="password" name="password" placeholder="Password" required />
+            </div>
+            <div class="input_field"> <span class="material-icons">
+                lock
+              </span>
+              <input type="password" name="confirmpassword" placeholder="Re-type Password" required />
+            </div>
+            <input class="button" type="submit" value="Register" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

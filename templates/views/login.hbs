@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> headerLinks2}}
+
+  <title>Login Form</title>
+</head>
+
+<body>
+  <div class="form_wrapper">
+    <div class="form_container">
+      <div class="title_container">
+        <h2> Login an Account </h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form action="/login" method="POST">
+            <div class="row clearfix">
+
+            </div>
+            <div class="input_field"><span class="material-icons">
+                email
+              </span>
+              <input type="email" name="email" placeholder="email" required />
+            </div>
+            <div class="input_field"> <span class="material-icons">
+                lock
+              </span>
+              <input type="password" name="password" placeholder="Password" required />
+            </div>
+
+            <input class="button" type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
